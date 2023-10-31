@@ -1,2 +1,3 @@
 # simple-logger
-Logging string made simple
+
+Extendable data logging made simple

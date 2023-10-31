@@ -1,0 +1,12 @@
+{
+  "name": "simple-logger",
+  "version": "1.0.0",
+  "description": "Extendable data logging made simple",
+  "main": "index.js",
+  "scripts": {
+    "breakfast": "echo \"Breakfast is most important meal of the day.\""
+  },
+  "keywords": ["logger"],
+  "author": "puzzledots",
+  "license": "ISC"
+}
