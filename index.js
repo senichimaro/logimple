@@ -6,6 +6,7 @@ class Logger {
   constructor() {
   }
 
+  // should be opts self descriptive
   log(opts = {}) {
     this.createMsgString(opts?.msg, opts?.filepath, opts?.errorLevel)
     if (opts?.data) console.log(">>> DATA:", opts?.data);
@@ -16,6 +17,7 @@ class Logger {
     if (data) console.log(">>> DATA:", data);
   }
 
+  // should be private
   createMsgString(msg, filepath = '', errorLevel = '') {
     const str = `${errorLevel ? `>>> ${errorLevel}` : `>>> log`}: ${msg} ${filepath && `| ${filepath} `}| ${new Date().toISOString()}`
 

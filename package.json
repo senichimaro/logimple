@@ -1,12 +1,17 @@
 {
-  "name": "simple-logger",
+  "name": "loggimple",
   "version": "1.0.0",
   "description": "Extendable data logging made simple",
   "main": "index.js",
   "scripts": {
     "breakfast": "echo \"Breakfast is most important meal of the day.\""
   },
-  "keywords": ["logger"],
+  "keywords": [
+    "logger"
+  ],
   "author": "puzzledots",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
 }
