@@ -1,6 +1,6 @@
 {
-  "name": "loggimple",
-  "version": "1.0.0",
+  "name": "logimple",
+  "version": "1.1.0",
   "description": "Extendable data logging made simple",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
   "author": "puzzledots",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.8.10",
     "typescript": "^5.2.2"
   }
 }
