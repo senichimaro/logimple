@@ -66,11 +66,15 @@ logger.check("logging init")
 
 
 try {
+    logger.log({
+        msg: "warning message",
+        errorLevel: "WARN"
+    })
     throw new Error("Error tests")
 }
 catch(error) {
     logger.log({
-        msg: "custom message",
+        msg: "error message",
         filepath: __dirname,
         errorLevel: "ERROR",
         data: error
@@ -82,22 +86,22 @@ catch(error) {
 
 Early phases of debuggin, ideal to ninja test.
 
-* logger.check(msg = '', filepath = '', data = '')
+* `logger.check(msg = '', filepath = '', data = '')`
 
 ```js
-// msg: custom message (checkpoint)
+// msg: useful for scan and marking down
 logger.check("logging init")
 
-// filepath?: string
+// filepath: check file flow
 logger.check("logging init", __dirname)
 
-// data?: any
-logger.check("logging init", __dirname, arg1/error)
+// data: dump data
+logger.check("logging init", '', arg1/error)
 ```
 
 ### Error Level
 
-Robust implementation providing Error Levels: Info, Warn, Error, Debugs.
+Robust implementation providing Error Levels: Info, Warn, Error, Debug.
 
 ```ts
 type LogParams = {
@@ -108,10 +112,10 @@ type LogParams = {
 }
 
 logger.log({
-    msg: "custom message",
+    msg: "text message",
     filepath: __dirname,
-    errorLevel: "ERROR",
-    data: error
+    errorLevel: "INFO",
+    data: obj
 })
 ```
 
