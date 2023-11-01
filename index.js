@@ -17,6 +17,15 @@ class Logger {
         if (data)
             console.log(">>> DATA:", data);
     }
+    welcome(text = 'logimple') {
+        console.log(`
+    ####################################################################
+    
+    ### Welcome to ${text}
+    
+    ####################################################################
+    `);
+    }
     createMsgString(msg = '', filepath = '', errorLevel = '') {
         const str = `${errorLevel ? `>>> ${errorLevel}` : `>>> log`}: ${msg} ${filepath && `| ${filepath} `}| ${new Date().toISOString()}`;
         switch (errorLevel) {
