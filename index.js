@@ -5,6 +5,11 @@ class Logger {
         this.WARN_LEVEL = "WARN";
         this.ERROR_LEVEL = "ERROR";
         this.DEBUG_LEVEL = "DEBUG";
+        
+        if (Logger.instance) {
+            return Logger.instance;
+        }
+        Logger.instance = this;
     }
     log(logParams) {
         const { msg, filepath, errorLevel, data } = logParams;
@@ -17,7 +22,7 @@ class Logger {
         if (data)
             console.log(">>> DATA:", data);
     }
-    welcome(text = 'logimple') {
+    welcome(text = 'logssimple') {
         console.log(`
     ####################################################################
     
