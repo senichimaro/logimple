@@ -1,5 +1,5 @@
 {
-  "name": "logimple",
+  "name": "logsimple",
   "version": "1.3.0",
   "description": "Extendable data logging made simple",
   "main": "index.js",
