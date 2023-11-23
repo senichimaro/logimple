@@ -1,10 +1,10 @@
-# logimple
+# logssimple
 
 Extendable data logging made simple.
 
 ```js
-const logimple = require("logimple")
-const logger = new logimple()
+const logssimple = require("logssimple")
+const logger = new logssimple()
 logger.check("logging init")
 
 
@@ -32,7 +32,7 @@ If this is a brand new project, make sure to create a package.json first with th
 Installation is done using the npm install command:
 
 ```sh
-npm install logimple
+npm install logssimple
 ```
 
 ## Features
@@ -44,22 +44,22 @@ npm install logimple
 
 ## Quick Start 
 
-The quickest way to get started with logimple is to require logimple and instantiate it.
+The quickest way to get started with logssimple is to require logssimple and instantiate it.
 
 Install by default:
 
 ```sh
-npm i logimple
+npm i logssimple
 ```
 
-Require logimple and instantiate it:
+Require logssimple and instantiate it:
 
 ```js
-const logimple = require("logimple")
-const logger = new logimple()
+const logssimple = require("logssimple")
+const logger = new logssimple()
 ```
 
-Use logimple!
+Use logssimple!
 
 ```js
 logger.check("logging init")
